@@ -1,0 +1,112 @@
+#resizePic{
+    width: 650px;
+    height: 500px;
+  
+}
+
+.marg{
+    margin-left: 30px;
+}
+.border{
+    border-radius: 30px;
+    border-color: blue;
+    
+}
+
+a:hover{
+    background-color: blue;
+}
+
+.backG{
+    background-color: rgba(187, 168, 163, 0.199);
+}
+
+.hello{
+    margin-top: 110px;
+    margin-left: 350px;
+    color: rgb(117, 114, 114);
+}
+.txt{
+    
+    margin-left: 350px;
+}
+
+.marginTop{
+    margin-top: 40px;
+}
+
+.colorW{
+
+    background-color: white;
+}
+
+.placeH {
+    margin-left: 800px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+
+.tailleS{
+    height: 300px;
+    width: 300px;
+}
+
+
+.removeBorder{
+border:none
+
+
+}
+
+.btn:hover{
+    background-color: rgb(13, 167, 228)
+    
+}
+
+.up{
+    margin-top: 30px;
+}
+
+.bg{
+    background-color: rgb(13, 167, 228);
+}
+
+.white{
+    color: white;
+}
+.bold{
+    font-weight: bold;
+}
+
+.ligne{
+    color: rgb(13, 167, 228);
+    
+}
+
+hr {
+    
+        border-top : 3px solid rgb(13, 167, 228);
+        width : 50px;
+        } 
+
+        
+.hr {
+    border-top : 3px solid rgb(255, 255, 255);
+width : 50px;
+}
+    
+/* margin top sur titre portfolio*/
+
+.margTop{
+    margin-top: 250px;
+}
+/* taille image juste en dessous du titre portfolio*/
+.imgSize{
+    width: 350px;
+    height: 350px;
+}
+ 
+            
+       
+   
