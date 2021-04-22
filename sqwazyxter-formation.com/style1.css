@@ -194,7 +194,9 @@ div ul li{
 
 .placeStep1{
     margin-left: 130px;
+   
   }
+  
   
   .margin2{
     margin-top: 50px;
@@ -269,12 +271,23 @@ a:hover{
 }
 
 
+.moveR{
+    margin-left: 150px;
+}
+
+
+
+
 
 /*catalogue**/
 
 .taille-image{
     max-width: 250px;
     height: 250px;
+}
+.taille-image2{
+    max-width: 32px;
+    height: 32px;
 }
 
 
@@ -310,3 +323,16 @@ margin-left: 130px;
 .downe{
     margin-bottom: 50px;
   }
+/* connexion btn*/
+  .bouton-connection{
+    background-color: white;
+    float: right;
+    margin-top: 75px;
+    margin-right: 10px;
+}
+
+
+.taille-icone{
+    width: 2px;
+    height: 2px;
+}

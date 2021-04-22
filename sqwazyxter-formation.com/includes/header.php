@@ -22,6 +22,19 @@
         <img src="img/logo.jpeg" alt="logo du site" class="logo">
         </a>
 
+        <div class="row">
+            <div class="col-9">
+
+            </div>
+            <div class="col-1">
+          <a href="https://sqwazyxter-formation.com/connexion.php">  <button type="button" class="btn btn-dark">Connexion</button></a>
+            </div>
+            <div class="col-2">
+           <a href="https://sqwazyxter-formation.com/inscription.php"> <button type="button" class="btn btn-light">Inscription</button></a>
+
+            </div>
+        </div>
+
         <nav>
             <ul>
                 <li>
@@ -37,7 +50,7 @@
                     <a href="http://sqwazyxter-formation.com/reservation.php" title="Réservation">Réservation</a>
                 </li>
                 <li>
-                    <a href="rendez-vous.php" title="Rendez-vous">Rendez-vous</a>
+                    <a href="http://sqwazyxter-formation.com/rendez-vous.php" title="Rendez-vous">Rendez-vous</a>
                 </li>
             </ul>
         </nav>

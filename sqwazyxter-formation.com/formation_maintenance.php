@@ -1,30 +1,83 @@
-<?php include("includes/header.php"); ?>
+<?php 
+    session_start();
+   
+if(isset($_SESSION['user']))
+{
+    require_once 'includes/headerOnline.php';   
+}
+else {
+    require_once 'includes/header.php'; 
+}
+?>
 
-    <title>Formation 1</title>
+    <title>Formation - Maintenance</title>
   </head>
   <body>
   
   <div class="container">
   <ul class="margin">
   <li><a href="https://sqwazyxter-formation.com/index.php">  Accueil</a></li>
-  <li class="ariane"><a href="#">Catalogue</a></li>
-  <li  class="ariane">Formation 1</li>
+  <li class="ariane"><a href="https://sqwazyxter-formation.com/catalogue.php">Catalogue</a></li>
+  <li  class="ariane">Formation Maintenance</li>
 </ul> 
   </div>
 
 
-    <h3 class="h3">FORMATION 1</h3>
-
+    <h3 class="h3">FORMATION MAINTENANCE</h3>
 
 
     <div class="container">
         <div class="row">
-            <div class="col-8">
-                <p class="txtDetailF">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. <br> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, <br> and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <div class="col-3">
+
             </div>
             <div class="col-4">
-                <img class="tailleImg" src="img/formationPic.jpg" alt="">
+                <img src="img/maintenance.png" alt="" srcset="">
             </div>
+            <div class="col-5">
+
+            </div>
+        </div>
+    </div>
+
+
+
+<form action="insertCart.php" method="post">
+    <div class="">
+        <div class="row">
+            <div class="col-12">
+            <table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Domaine</th>
+      <th scope="col">ref.produit</th>
+      <th scope="col">intitulé de la formation</th>
+      <th scope="col">Durée</th>
+      <th scope="col">Certfication vidée</th>
+      <th scope="col">Public ou niveau</th>
+      <th scope="col">Prérequis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Support PC</td>
+      <td>SMX01</td>
+      <td>Maintenance et configuration</td>
+      <td>28H</td>
+      <td></td>
+      <td>tout Expert</td>
+      <td>connaissances
+
+micro-
+informatique...</td>
+    </tr>
+   
+  </tbody>
+</table>
+            </div>
+            
         </div>
     </div>
 
@@ -32,12 +85,17 @@
    
       <div class="row">
         <div class="col-4">
-        <button type="button" class="btn btn-outline-primary btnPlace">Ajouter au panier</button>
+        <button type="submit" value="add Cart" name='AddCart' class="btn btn-outline-primary btnPlace">Ajouter au panier</button>
         </div>
         <div class="col-8">
        
         </div>
+
+        <input type="hidden" name="name" value="FormationDev">
+        <input type="hidden" name="prix" value="300$">
       </div>
+
+      </form>
     
       <?php include("includes/footer.php"); ?>
     <!-- Optional JavaScript; choose one of the two! -->

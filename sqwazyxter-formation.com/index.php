@@ -1,44 +1,20 @@
-<!doctype html>
-<html lang="en">
+<?php 
+    session_start();
+   
+if(isset($_SESSION['user']))
+{
+    require_once 'includes/headerOnline.php';   
+}
+else {
+    require_once 'includes/header.php'; 
+}
+?>
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="style1.css">
+
 
     <title>sqwazyxter/Formation - Accueil</title>
-</head>
 
-<body>
-    <header>
-        <img src="img/logo.jpeg" alt="logo du site" class="logo">
-
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.php" title="accueil du site">Accueil</a>
-                </li>
-                <li>
-                    <a href="https://sqwazyxter-formation.com/catalogue.php" title="Catalogue">Catalogue</a>
-                </li>
-                <li>
-                    <a href="https://sqwazyxter-formation.com/accompagnement.php" title="Accompagnement">Accompagnement</a>
-                </li>
-                <li>
-                    <a href="#" title="Réservation">Réservation</a>
-                </li>
-                <li>
-                    <a href="rendez-vous.php" title="Rendez-vous">Rendez-vous</a>
-                </li>
-            </ul>
-        </nav>
-
-    </header>
 
     <div class="container marge-accueil">
         <div class="row">

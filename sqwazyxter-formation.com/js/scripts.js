@@ -425,12 +425,13 @@ function ecritureTableau(t,j,tableauHTML,nbrJourMois){
     }
 }
 
+
 let valFrm = document.getElementById("valFrm")
 
 // verification heure
 
 let heure = document.getElementById("heure");
-let  = document.getElementById("heureFrm");
+let heureFrm = document.getElementById("heureFrm");
 let heureForm = document.getElementById("heureForm")
 
 valFrm.addEventListener("click", function(e){

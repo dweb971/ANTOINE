@@ -1,197 +1,99 @@
 
-<?php include("includes/header.php"); ?>
+<?php 
+    session_start();
+   
+if(isset($_SESSION['user']))
+{
+    require_once 'includes/headerOnline.php';   
+}
+else {
+    require_once 'includes/header.php'; 
+}
+?>
     <title>sqwazyxter/Formation - Rendez-vous</title>
 </head>
 
 <body>
    
-    <h1>RENDEZ-VOUS</h1>
+<h1>RENDEZ-VOUS</h1>
+<form action="" class="needs-validation" novalidate>
     <div class="container">
         <div class="row">
             <div class="col-6">
-            <form method="POST" action="traitement.php" class="needs-validation" novalidate>
+               
                     <div class="form-group">
-                        <label for="nom">Nom <span class="obligatoire">*</span> </label>
-                        <input type="text" class="form-control" id="" name="nom" maxlength="1000" minlength="1"
-                            required>
+                        <input type="text" class="form-control" id="" placeholder="NOM" required>
                         <div class="valid-feedback">
-                            Looks good!
+                        Bon !
                         </div>
                         <div class="invalid-feedback">
-                            Indiquez votre nom!
+                            Indiquez votre NOM !
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="prenom">Prénom <span class="obligatoire">*</span> </label>
-                        <input type="text" class="form-control" id="" name="prenom" maxlength="1984" minlength="2"
-                            required>
+                        <input type="text" class="form-control" id="" placeholder="Prénom" required>
                         <div class="valid-feedback">
-                            Looks good!
+                            Bon !
                         </div>
                         <div class="invalid-feedback">
-                            Indiquez votre prénom!
+                            Indiquez votre prénom !
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="">Téléphone  <span class="obligatoire">*</span></label>
-                        <input type="tel" class="form-control" id="" name="telephone" maxlength="10" required>
+                        <input type="tel" class="form-control" id="" placeholder="Téléphone" required>
                         <div class="valid-feedback">
-                            Looks good!
+                        Bon !
                         </div>
                         <div class="invalid-feedback">
-                            Indiquez votre numéro de téléphone!
+                            Indiquez votre téléphone!
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email <span class="obligatoire">*</span> </label>
-                        <input type="email" class="form-control downe" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            name="email" maxlength="5977" minlength="7" required>
+                        <input type="mail" class="form-control" id="" placeholder="Email" required>
                         <div class="valid-feedback">
-                            Looks good!
+                        Bon !
                         </div>
                         <div class="invalid-feedback">
                             Indiquez votre email!
                         </div>
-                        <div class="form-group up">
-                        <textarea class="form-control " id="exampleFormControlTextarea1" rows="3"
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
                             placeholder="Raison de la visite"></textarea>
+                            <div class="valid-feedback">
+                            Bon !
+                        </div>
+                        
                     </div>
-                    </div>
-                
                     
-               
+                    
             </div>
             <div class="col-6">
-                
-                    <select class="custom-select" id="selectedM" required>
-                        <option value="1" id="mois">Janvier</option>
-                        <option value="2" id="mois">Février</option>
-                        <option value="3" id="mois">Mars</option>
-                        <option value="4" id="mois">Avril</option>
-                        <option value="5" id="mois">Mai</option>
-                        <option value="6" id="mois">Juin</option>
-                        <option value="7" id="mois">Juillet</option>
-                        <option value="8" id="mois">Août</option>
-                        <option value="9" id="mois">Septembre</option>
-                        <option value="10" id="mois">Octobre</option>
-                        <option value="11" id="mois">Novembre</option>
-                        <option value="12" id="mois">Décembre</option>
-                    </select>
-                    <table class="table table-bordered table-sm" id="agenda" required>
-                        <thead>
-                            <!--entête tableau-->
-                            <tr>
-                                <th> Lundi </th>
-                                <th> Mardi </th>
-                                <th> Mercredi </th>
-                                <th> Jeudi </th>
-                                <th> Vendredi </th>
-                                <th> Samedi </th>
-                                <th> Dimanche </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <!--corps du tableau-->
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="invalid-feedback" id="agendaFrm">
-        Merci de choisir une date !
-      </div>
-                    <div>
-                      
-                        <select class="custom-select needs-validation" id="heure" required>
-                            <option value="" selected>Choisir une heure</option>
-                            <option value="7:00">7h00</option>
-                            <option value="7:40">7h40</option>
-                            <option value="8:00">8h00</option>
-                            <option value="8:40">8h40</option>
-                            <option value="9:00">9h00</option>
-                            <option value="9:40">9h40</option>
-                            <option value="10:00">10h00</option>
-                            <option value="10:40">10h40</option>
-                            <option value="11:00">11h00</option>
-                            <option value="11:40">11h40</option>
-                            <option value="14:00">14h00</option>
-                            <option value="14:30">14h30</option>
-                        </select>
-                        <div class="invalid-feedback" id="heureForm">Merci de choisir une heure de rendez-vous</div>
+            <?php include("includes/formDate.php"); ?>
+            <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            J'accepte le <a href="RGPD.php">Règlement Général sur la Protection des Données.</a>
+                        </label>
+                    </div>
                     </div>
                     <div class="row">
-                        <div class="col-6">
-
+                        <div class="col-10">
+                        
                         </div>
-                        <div class="col-6">
-                        <input type="checkbox"> J’autorise ce site à conserver mes données transmises via ce formulaire. Voir notre 
-                    <a href="#" target="_blank">Politique de Gestion des Données Personnelles</a>
-
-
-
-
-
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                        <div class="col-2">
+                            <button type="submit" class="btn btn-primary marge-bouton">Valider</button>
+                           
                         </div>
                     </div>
+                    
+                    </form>
 
-
-                </form>
+                    
             </div>
         </div>
     </div>
-
+    
     <?php include("includes/footer.php"); ?>
     <script>
                 // Example starter JavaScript for disabling form submissions if there are invalid fields

@@ -1,5 +1,14 @@
-<?php include("includes/header.php"); ?>
-
+<?php 
+    session_start();
+   
+if(isset($_SESSION['user']))
+{
+    require_once 'includes/headerOnline.php';   
+}
+else {
+    require_once 'includes/header.php'; 
+}
+?>
     <title>sqwazyxter/Formation - Catalogue</title>
 
 
@@ -11,43 +20,32 @@
         </div>
         <div class="row">
             <div class="col-4 centre">
-                <a href="https://sqwazyxter-formation.com/formation_detail.php" class="style-lien">
-                    <img src="img/formationPic.jpg" alt="image de formation" class="taille-image">
-                    <p>Formation 1</p>
+                <a href="https://sqwazyxter-formation.com/formation_informatique.php" class="style-lien">
+                    <img src="img/excel.jpg" alt="image de formation" class="taille-image">
+                    <p>FORMATION INFORMATIQUES</p>
                 </a>
             </div>
             <div class="col-4 centre">
-                <a href="#" class="style-lien">
-                    <img src="img/formationPic.jpg" alt="image de formation" class="taille-image">
-                    <p>Formation 2</p>
+                <a href="https://sqwazyxter-formation.com/formation_logiciel.php" class="style-lien">
+                    <img src="img/proteger-attaques.jpg" alt="image de formation" class="taille-image">
+                    <p>FORMATION LOGICIELS ET SÉCURITÉ</p>
                 </a>
             </div>
             <div class="col-4 centre">
-                <a href="#" class="style-lien">
-                    <img src="img/formationPic.jpg" alt="image de formation" class="taille-image">
-                    <p>Formation 3</p>
+                <a href="https://sqwazyxter-formation.com/formation_systeme.php" class="style-lien">
+                    <img src="img/620px-GNU_and_Tux.svg.png" alt="image de formation" class="taille-image">
+                    <p>FORMATION SYSTÈME D'EXPLOITATION</p>
                 </a>
             </div>
         </div>
         <div class="row">
             <div class="col-4 centre">
-                <a href="#" class="style-lien">
-                    <img src="img/formationPic.jpg" alt="image de formation" class="taille-image">
-                    <p>Formation 4</p>
+                <a href="https://sqwazyxter-formation.com/formation_maintenance.php" class="style-lien">
+                    <img src="img/maintenance.png" alt="image de formation" class="taille-image">
+                    <p>FORMATION MAINTENANCE</p>
                 </a>
             </div>
-            <div class="col-4 centre">
-                <a href="#" class="style-lien">
-                    <img src="img/formationPic.jpg" alt="image de formation" class="taille-image">
-                    <p>Formation 5</p>
-                </a>
-            </div>
-            <div class="col-4 centre">
-                <a href="#" class="style-lien">
-                    <img src="img/formationPic.jpg" alt="image de formation" class="taille-image">
-                    <p>Formation 6</p>
-                </a>
-            </div>
+           
         </div>
     </div>
 
@@ -73,5 +71,3 @@
 </body>
 
 </html>
-message.txt
-6 Ko

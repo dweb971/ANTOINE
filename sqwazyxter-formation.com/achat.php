@@ -1,4 +1,14 @@
-<?php include("includes/header.php"); ?>
+<?php 
+    session_start();
+   
+if(isset($_SESSION['user']))
+{
+    require_once 'includes/headerOnline.php';   
+}
+else {
+    require_once 'includes/header.php'; 
+}
+?>
     <link rel="stylesheet" href="style1.css">
 
     <title>Achat</title>
