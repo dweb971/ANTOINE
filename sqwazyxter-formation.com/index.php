@@ -9,6 +9,16 @@ else {
     require_once 'includes/header.php'; 
 }
 ?>
+ <?php
+                if(isset($_GET['true']) == "created"){
+            ?>
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    <strong>Bravo!</strong> Votre produit a été ajouter au panier avec succes.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            <?php
+                }
+            ?>
 
 
 
@@ -25,7 +35,7 @@ else {
                 <h1>BIENVENUE SUR SQWAZYXTER</h1>
             </div>
             <div class="col-2">
-
+           
             </div>
         </div>
         <div class="row">
@@ -34,10 +44,10 @@ else {
             </div>
             <div class="col-6">
                 <p>
-                    Notre site vous propose dans un premier temps des formations qualifiantes que vous pouvez retrouver à la vente dans le <a href="#">catalogue</a>.
-                    De plus, vous pouvez consulter vos formations et leurs avancements dans l'onglet <a href="#">accompagnement</a>.<br><br>
-                    Vous aurez aussi la possibilité de <a href="#">réserver</a> une salle.
-                    Enfin, vous pouvez demander un <a href="#">rendez-vous</a>.
+                    Notre site vous propose dans un premier temps des formations qualifiantes que vous pouvez retrouver à la vente dans le <a href="catalogue.php">catalogue</a>.
+                    De plus, vous pouvez consulter vos formations et leurs avancements dans l'onglet <a href="accompagnement.php">accompagnement</a>.<br><br>
+                    Vous aurez aussi la possibilité de <a href="reservation.php">réserver</a> une salle.
+                    Enfin, vous pouvez demander un <a href="rendez-vous.php">rendez-vous</a>.
                 </p>
             </div>
             <div class="col-3">

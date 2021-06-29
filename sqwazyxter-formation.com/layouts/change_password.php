@@ -23,7 +23,7 @@
 
         $check_password  = $bdd->prepare('SELECT password FROM utilisateur WHERE email = :email');
         $check_password->execute(array(
-            "email" => $_SESSION['user']
+            "email" => $_SESSION['email']
         ));
         $data_password = $check_password->fetch();
 
@@ -38,12 +38,16 @@
                     "password" => $new_password,
                     "email" => $_SESSION['user']
                 ));
-                header('Location: ../landing.php?err=success_password');
+                header('Location: ../index.php?err=success_password');
+                die();
+            }
+            else {
+                header('Location: ../index.php?err=retype_password');
                 die();
             }
         }
         else{
-            header('Location: ../landing.php?err=current_password');
+            header('Location: ../index.php?err=current_password');
             die();
         }
 

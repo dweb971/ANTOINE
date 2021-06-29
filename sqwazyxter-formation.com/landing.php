@@ -11,8 +11,7 @@
   </head>
   <body>
   
-
-      
+  
             <h3 class="h3">ACCOMPAGNEMENT</h3>
 
             <h5 class="h5">MES FORMATIONS</h5>

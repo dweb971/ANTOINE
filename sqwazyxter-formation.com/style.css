@@ -1,11 +1,16 @@
 /*HEAD*/
 
-.logo{
+.logoh{
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 75px;
+}
+.logo{
+    height: 32px;
+    width: 32px;
+    margin-left: 15px;
 }
 
 header{
@@ -336,3 +341,26 @@ margin-left: 130px;
     width: 2px;
     height: 2px;
 }
+
+
+#sqz{
+   
+    font-size: 100px;
+    float:right;
+    margin-right: 90px;
+    font-family: 'Anton', sans-serif;
+    color: white;
+    
+}
+
+
+
+/* page mon profil*/
+
+
+#btn{
+    margin-bottom: 30px;
+}
+
+/* police d'ecriture*/
+

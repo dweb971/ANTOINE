@@ -1,13 +1,16 @@
 <?php 
     require_once 'config.php';
 
-    if(!empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['password_retype']))
+    if(!empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['email']) && !empty($_POST['date_naissance']) && !empty($_POST['password']) && !empty($_POST['password_retype']))
     {
-        $nom = htmlspecialchars($_POST['nom']);
-        $prenom = htmlspecialchars($_POST['prenom']);
-        $email = htmlspecialchars($_POST['email']);
+        $nom = htmlspecialchars(strtoupper($_POST['nom']));
+        $prenom = htmlspecialchars(ucfirst($_POST['prenom']));
+        $email = htmlspecialchars(strtolower($_POST['email']));
+        $dateN = date('Y-m-d',strtotime($_POST['date_naissance']));
         $password = htmlspecialchars($_POST['password']);
         $password_retype = htmlspecialchars($_POST['password_retype']);
+
+        //sa fonctione
 
         $check = $bdd->prepare('SELECT nom, email, password FROM utilisateur WHERE email = ?');
         $check->execute(array($email));
@@ -38,11 +41,12 @@
                                 ));
                               */
                             
-                            $insert = $bdd->prepare('INSERT INTO utilisateur(nom, prenom, email, password, ip) VALUES(:nom, :prenom, :email, :password, :ip)');
+                            $insert = $bdd->prepare('INSERT INTO utilisateur(nom, prenom, email, date_naissance, password, ip) VALUES(:nom, :prenom, :email, :date_naissance, :password, :ip)');
                             $insert->execute(array(
                                 'nom' => $nom,
                                 'prenom' => $prenom,
                                 'email' => $email,
+                                'date_naissance' => $dateN,
                                 'password' => $password,
                                 'ip' => $ip
                             ));

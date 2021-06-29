@@ -10,7 +10,12 @@ else {
 }
 ?>
     <title>sqwazyxter/Formation - Catalogue</title>
-
+    <div class="">
+        <ul class="margin2">
+            <li><a href="index.php"> Accueil</a></li>
+            <li class="ariane">Catalogue</li>
+        </ul>
+    </div>
 
     <div class="container">
         <div class="row">
@@ -18,36 +23,40 @@ else {
                 <h1>CATALOGUE</h1>
             </div>
         </div>
+        </div>
+
+        <div class="container">
         <div class="row">
-            <div class="col-4 centre">
+        <div class="col-6 centre">
                 <a href="https://sqwazyxter-formation.com/formation_informatique.php" class="style-lien">
                     <img src="img/excel.jpg" alt="image de formation" class="taille-image">
                     <p>FORMATION INFORMATIQUES</p>
                 </a>
             </div>
-            <div class="col-4 centre">
+            <div class="col-6 centre">
                 <a href="https://sqwazyxter-formation.com/formation_logiciel.php" class="style-lien">
                     <img src="img/proteger-attaques.jpg" alt="image de formation" class="taille-image">
                     <p>FORMATION LOGICIELS ET SÉCURITÉ</p>
                 </a>
             </div>
-            <div class="col-4 centre">
+        </div>
+        <div class="row">
+        <div class="col-6 centre">
                 <a href="https://sqwazyxter-formation.com/formation_systeme.php" class="style-lien">
                     <img src="img/620px-GNU_and_Tux.svg.png" alt="image de formation" class="taille-image">
                     <p>FORMATION SYSTÈME D'EXPLOITATION</p>
                 </a>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-4 centre">
+       
+        
+            <div class="col-6 centre">
                 <a href="https://sqwazyxter-formation.com/formation_maintenance.php" class="style-lien">
                     <img src="img/maintenance.png" alt="image de formation" class="taille-image">
                     <p>FORMATION MAINTENANCE</p>
                 </a>
             </div>
-           
         </div>
-    </div>
+        </div>  
 
     <?php include("includes/footer.php"); ?>
 
